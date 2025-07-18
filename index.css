@@ -6,11 +6,7 @@ body {
     padding: 20px;
     background-color: #f4f4f4;
     color: #333;
-    background-image: url('sea.jpg'); /* ここを新しい画像の名前に変えます */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
+    background-color: lightblue;
 }
 
 h1 {
