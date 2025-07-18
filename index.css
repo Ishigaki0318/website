@@ -1,26 +1,79 @@
+/* main.css */
+
 body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
 }
-.header {
-  background-color: white;
-  padding: 0 .5em;
-}
-.footer {
-  background-color: white;
-  padding: 0 .5em;
-}
-.main {
-  background-color: #fff8d8;
-  padding: 1em;
-}
+
 h1 {
-  font-size: 150%;
-  margin: 0 0;
-  padding: .5em 0;
+    color: #ffffff;
+    background-color: #ff0000; 
+    padding: 1rem 2rem; 
+    text-align: center;
+    border-radius: 0.5rem; 
+    font-size: 2.5em;
+    
 }
-div {
-  padding: 0vw 0vh;
-  margin: 0vw 0vh;
+
+p {
+    line-height: 1.6;
+    color: #ffffff;
+    font-size: 1.5em;
+    
 }
+
+img {
+    display: block;        /* 画像をブロック要素として扱います */
+    margin-left: auto;     /* 左マージンを自動調整して中央寄せ */
+    margin-right: auto;    /* 右マージンを自動調整して中央寄せ */
+    /* または、簡潔に以下のように記述できます */
+    /* margin: 20px auto; */ /* 上下に20px、左右を自動にして中央寄せ */
+
+    /* 以前に設定した画像の幅や枠線などのスタイルも残しておきましょう */
+    max-width: 100%;       /* 親要素の幅を超えないようにする */
+    height: auto;          /* アスペクト比を保つ */
+    /* border: 2px solid #ddd; */
+    /* border-radius: 8px; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0; /* paddingを0にして、背景が端まで広がるようにします */
+    color: #333; /* 背景色と重なるので文字色を調整することも検討してください */
+
+    /* --- ここから背景に関する設定 --- */
+    background-image: url('images/sea.jpg'); /* ここに画像ファイルのパスを指定します */
+    background-size: cover; /* 画面全体を覆うように画像を拡大縮小します */
+    background-position: center center; /* 画像を中央に配置します */
+    background-repeat: no-repeat; /* 画像の繰り返しをなくします */
+    background-attachment: fixed; /* ページをスクロールしても背景画像を固定します */
+    /* --- ここまで背景に関する設定 --- */
+}
+
+.photo-gallery {
+    display: flex; /* この箱の中身を横並びにするぞ！という宣言 */
+    
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    line-height: 1.6;
+    color: #ffffff;
+    font-size: 2.0em;
+}
+
+
